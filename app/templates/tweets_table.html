@@ -1,0 +1,18 @@
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th scope="col">Nombre completo</th>
+      <th scope="col">Cumpleaños</th>
+      <th scope="col">Tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for t in tweets %}
+    <tr>
+      <td>{{ t.author.fullname }}</td>
+      <td>{{ t.author.birth }}</td>
+      <td>{{ t.message }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

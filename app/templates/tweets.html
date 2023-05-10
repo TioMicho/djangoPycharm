@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block 'content' %}
+    {% if tweets %}
+        {% include 'tweets_table.html' %}
+    {% else %}
+        <p>Ho hay tweets creados...</p>
+    {% endif %}
+{% endblock %}
